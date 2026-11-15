@@ -20,7 +20,6 @@ SCOPES = [
     # Gmail — full mailbox access
     "https://mail.google.com/",
     "https://www.googleapis.com/auth/gmail.settings.basic",
-    "https://www.googleapis.com/auth/gmail.settings.sharing",
 
     # Google Calendar — full management
     "https://www.googleapis.com/auth/calendar",
