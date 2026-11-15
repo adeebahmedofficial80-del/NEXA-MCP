@@ -13,9 +13,31 @@ BASE_DIR = Path(__file__).resolve().parent
 load_dotenv(BASE_DIR / ".env")
 
 SCOPES = [
-    "https://www.googleapis.com/auth/gmail.readonly",
-    "https://www.googleapis.com/auth/calendar.readonly",
-    "https://www.googleapis.com/auth/drive.metadata.readonly",
+    "openid",
+    "https://www.googleapis.com/auth/userinfo.email",
+    "https://www.googleapis.com/auth/userinfo.profile",
+
+    # Gmail — full mailbox access
+    "https://mail.google.com/",
+    "https://www.googleapis.com/auth/gmail.settings.basic",
+    "https://www.googleapis.com/auth/gmail.settings.sharing",
+
+    # Google Calendar — full management
+    "https://www.googleapis.com/auth/calendar",
+
+    # Google Drive — full file management
+    "https://www.googleapis.com/auth/drive",
+
+    # Google Contacts — full contact management
+    "https://www.googleapis.com/auth/contacts",
+
+    # Google Tasks — full task management
+    "https://www.googleapis.com/auth/tasks",
+
+    # YouTube — account and content management
+    "https://www.googleapis.com/auth/youtube",
+    "https://www.googleapis.com/auth/youtube.force-ssl",
+    "https://www.googleapis.com/auth/youtube.upload",
 ]
 
 TOKEN_PATH = Path(
